@@ -1,0 +1,28 @@
+{
+  "name": "CampGrounds",
+  "version": "1.0.0",
+  "description": "Web Technologies-II Project, V Semester, Camping Grounds Website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathviksaya/CampGrounds.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sathviksaya/CampGrounds/issues"
+  },
+  "homepage": "https://github.com/sathviksaya/CampGrounds#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6"
+  }
+}

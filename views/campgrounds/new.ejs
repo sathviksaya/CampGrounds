@@ -1,0 +1,18 @@
+<% layout('layouts/boilerplate') %>
+<form action="/campgrounds" method="POST">
+    <div>
+        <label for="title"></label>
+        <input id="title" type="text" name="campground[title]">
+    </div>
+    <div>
+        <label for="location"></label>
+        <input id="location" type="text" name="campground[location]">
+    </div>
+    <div>
+        <button>Add Campground</button>
+    </div>
+</form>
+
+<footer>
+    <a href="/campgrounds">All Campgrounds</a>
+</footer>
