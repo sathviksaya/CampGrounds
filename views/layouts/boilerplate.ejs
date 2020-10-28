@@ -13,6 +13,7 @@
 <body class="d-flex flex-column vh-100">
     <%- include('../partials/navbar') %>
     <main class="container mt-5">
+        <%- include('../partials/flash') %>
         <%- body %>
     </main>
     <%- include('../partials/footer') %>
@@ -22,23 +23,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"
         integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d"
         crossorigin="anonymous"></script>
-    <script>
-        (function () {
-            'use strict'
-            const forms = document.querySelectorAll('.validated-form')
-            Array.from(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
-
+    <script src="/javascripts/validateForms.js"></script>
 </body>
 
 </html>
