@@ -22,7 +22,7 @@ const reviewRoutes = require('./routes/reviews');
 
 const mongoSanitize = require('express-mongo-sanitize');
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const app = express();
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/CampGrounds';
