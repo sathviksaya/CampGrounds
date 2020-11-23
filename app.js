@@ -25,7 +25,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const port = process.env.PORT || 4000;
 
 const app = express();
-const dbUrl = 'mongodb://localhost:27017/CampGrounds' || process.env.DB_URL;
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/CampGrounds';
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
